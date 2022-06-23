@@ -66,7 +66,7 @@
             }
     
             marker = L.marker([lat, long])
-            circle = L.circle([lat, long], {radius: accuracy})
+            circle = L.circle([lat, long], {radius: 15})
     
             var featureGroup = L.featureGroup([marker, circle]).addTo(map)
     
@@ -86,7 +86,7 @@
 
             let container=document.getElementById('container');
             console.log('conatainer',container.innerHTML)
-            container.innerHTML+=`<h4>long=${longi} lat=${lati} alt=${altitudei} speed=${speedi} head=${headingi} </h4>`;
+            container.innerHTML+=`<h4>long=${longi} lat=${lati} alt=${altitudei} speed=${speedi} head=${headingi} accracy=${accuracyi}</h4>`;
           
         }
     </script>
